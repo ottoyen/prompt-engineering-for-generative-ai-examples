@@ -1,0 +1,13 @@
+langchain
+langchain-openai
+langchain-community
+langchain-text-splitters
+google-search-results
+pandas 
+html2text 
+pytest-playwright 
+chromadb
+pydantic
+gradio
+openai
+tiktoken
