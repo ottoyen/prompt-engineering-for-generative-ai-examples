@@ -4,7 +4,7 @@
 
 ## 系統概述
 
-本系統是一個完整的 AI 驱动部落格內容生成平台，能夠自動化創建高品質的繁體中文部落格文章。系統整合了網路搜尋、內容摘要、專家訪談模擬、文章大綱生成和圖像創建等功能，提供端對端的內容創作解決方案。
+本系統是一個完整的 AI 驅動部落格內容生成平臺，能夠自動化創建高品質的繁體中文部落格文章。系統整合了網路搜尋、內容摘要、專家訪談模擬、文章大綱生成和圖像創建等功能，提供端對端的內容創作解決方案。
 
 ## 核心功能
 
@@ -14,7 +14,7 @@
 - 自動將 HTML 內容轉換為可處理的文本文檔
 
 ### 📄 文檔智能處理
-- AI 驱动的內容摘要生成
+- AI 驅動的內容摘要生成
 - 結構化文檔分析和關鍵信息提取
 - 基於主題的專家訪談問題生成
 
@@ -25,7 +25,7 @@
 - 強制繁體中文輸出
 
 ### 🎨 視覺內容創建
-- OpenAI 圖像生成 API 整合
+- 圖像生成 API 整合
 - 自動配圖生成
 
 ## 技術架構
@@ -48,14 +48,14 @@
 
 ### 環境需求
 - Python 3.8+
-- pip 包管理器
+- pip Package管理器
 
 ### 安裝步驟
 
-1. 克隆專案
+1. 複製專案
 ```bash
 git clone <repository-url>
-cd my-gradio-lab1
+cd chapter_10_zh_TW
 ```
 
 2. 安裝相依性
@@ -67,12 +67,14 @@ pip install -r requirements.txt
 ```bash
 export SERPAPI_API_KEY="your_serpapi_key"
 export OPENAI_API_KEY="your_openai_key"
+export STABILITY_API_KEY="your_STABILITY_API_key"
 ```
 
 ### 必要 API 金鑰
 
 - **SERPAPI_API_KEY**: 用於 Google 搜尋結果獲取
-- **OPENAI_API_KEY**: 用於 LLM 操作和圖像生成
+- **OPENAI_API_KEY**: 用於 LLM 操作
+- **STABILITY_API_KEY**: 用於圖像生成
 
 ## 使用方式
 
@@ -83,7 +85,7 @@ python gradio_code_example.py
 
 ### 啟動簡易演示
 ```bash
-python first.py
+python hello.py
 ```
 
 ## 系統操作流程
@@ -99,6 +101,7 @@ python first.py
 - **LangChain**: 核心 LLM 框架和文檔處理
 - **Gradio**: 網路用戶界面框架
 - **OpenAI**: 大語言模型和圖像生成
+- **STABILITY**: 圖像生成
 - **ChromaDB**: 向量資料庫用於 RAG
 - **Playwright**: 網頁內容抓取
 - **SerpAPI**: Google 搜尋結果 API
